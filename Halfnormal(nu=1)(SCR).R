@@ -129,10 +129,10 @@ a_values = c(0.5, 1, 1.5)    #tuning parameters
 
 alternatives <- list(  
   
-  Halfnormal_0.5 = function(n) rhalfnormal(n, 0.5),
+ # Halfnormal_0.5 = function(n) rhalfnormal(n, 0.5),
   Halfnormal_1 = function(n) rhalfnormal(n, 1),
-  Halfnormal_3 = function(n) rhalfnormal(n, 3),
-  Halfnormal_5 = function(n) rhalfnormal(n, 5),
+ # Halfnormal_3 = function(n) rhalfnormal(n, 3),
+ # Halfnormal_5 = function(n) rhalfnormal(n, 5),
   
   Pareto_1  = function(n) rpareto(n, 1, 0.5),
   Pareto_2  = function(n) rpareto(n, 1, 1),
@@ -266,6 +266,7 @@ for (alt in names(alternatives)) {
 ###############################################################
 combined_results <- cbind(results, classic_power)
 combined_results
+
 
 
 
