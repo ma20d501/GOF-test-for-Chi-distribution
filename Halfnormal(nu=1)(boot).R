@@ -135,9 +135,9 @@ dBenini <- function(x,parm){
 }
 # ========== Alternative Distributions ========== #
 r_alternatives <- list(
-  Halfnormal_0.5 = function(n) rhalfnormal(n, 0.5),
+  #Halfnormal_0.5 = function(n) rhalfnormal(n, 0.5),
   Halfnormal_1 = function(n) rhalfnormal(n, 1),
-  HalfNormal_3 = function(n) rhalfnormal(n, 3),
+  #HalfNormal_3 = function(n) rhalfnormal(n, 3),
   
   Pareto_1  = function(n) rpareto(n, 1, 0.5),
   Pareto_2  = function(n) rpareto(n, 1, 1),
@@ -245,3 +245,4 @@ for (nu in nu_values) {
 results[["nu1_n25"]]  # Half-normal case, n=25
 results[["nu1_n50"]]  # Half-normal case, n=50
  
+
