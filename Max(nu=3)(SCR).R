@@ -178,8 +178,8 @@ nu=3
 
 alternatives <- list(  
   max1 = function(n) rmaxwell(n,1),
-  max2 = function(n) rmaxwell(n,3),
-  max3 = function(n) rmaxwell(n,5),
+  #max2 = function(n) rmaxwell(n,3),
+  #max3 = function(n) rmaxwell(n,5),
   
   Halfnormal_1 = function(n) rhalfnormal(n, 1),
   Halfnormal_3 = function(n) rhalfnormal(n, 3),
@@ -326,6 +326,7 @@ for (alt in names(alternatives)) {
 ###############################################################
 combined_results <- cbind(results, classic_power)
 combined_results
+
 
 
 
