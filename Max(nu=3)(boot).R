@@ -177,8 +177,8 @@ rEV <- function(n,parm){
 # ========== Alternative Distributions ========= #
 r_alternatives <- list(  
   max1 = function(n) rmaxwell(n,1),
-  max2 = function(n) rmaxwell(n,3),
-  max3 = function(n) rmaxwell(n,5),
+  #max2 = function(n) rmaxwell(n,3),
+  #max3 = function(n) rmaxwell(n,5),
   
   Halfnormal_1 = function(n) rhalfnormal(n, 1),
   Halfnormal_3 = function(n) rhalfnormal(n, 3),
@@ -302,4 +302,5 @@ for (nu in nu_values) {
 }
 results[["nu3_n25"]]   
 results[["nu3_n50"]]   
+
 
