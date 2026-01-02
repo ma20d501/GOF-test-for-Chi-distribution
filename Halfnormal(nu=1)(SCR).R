@@ -156,7 +156,7 @@ alternatives <- list(
   
   InvGamma_1 = function(n) rinvgamma(n, 1.5, 1),
   InvGamma_2 = function(n) rinvgamma(n, 3, 1),
-  InvGamma_3 = function(n) rinvgamma(n, 3.0, 5),
+  InvGamma_3 = function(n) rinvgamma(n, 3, 5),
   
   Weibull_1 = function(n) rweibull(n, 0.7, 1),
   Weibull_2 = function(n) rweibull(n, 1, 1),
@@ -266,6 +266,7 @@ for (alt in names(alternatives)) {
 ###############################################################
 combined_results <- cbind(results, classic_power)
 combined_results
+
 
 
 
