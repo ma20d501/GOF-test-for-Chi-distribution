@@ -293,9 +293,9 @@ rEV <- function(n,parm){
 }
 # ========== Alternative Distributions ========= #
 r_alternatives <- list(
-  Ray1 = function(n) rrayleigh(n, 0.5),
+  #Ray1 = function(n) rrayleigh(n, 0.5),
   Ray2 = function(n) rrayleigh(n, 1),
-  Ray3 = function(n) rrayleigh(n, 3),
+  #Ray3 = function(n) rrayleigh(n, 3),
   
   Halfnormal_1 = function(n) rhalfnormal(n, 1),
   Halfnormal_3 = function(n) rhalfnormal(n, 3),
@@ -426,4 +426,5 @@ for (nu in nu_values) {
 }
 results[["nu2_n25"]]   
 results[["nu2_n50"]]   
+
 
