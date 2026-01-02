@@ -169,7 +169,7 @@ alternatives <- list(
   mix=function(n)rchi_family(n,3.5),
   
   Halfnormal_1 = function(n) rhalfnormal(n, 1),
- # Halfnormal_3 = function(n) rhalfnormal(n, 3),
+  Halfnormal_3 = function(n) rhalfnormal(n, 3),
   
   Ray1 = function(n) rrayleigh(n, 0.5),
   Ray2 = function(n) rrayleigh(n, 1),
@@ -323,6 +323,7 @@ for (alt in names(alternatives)) {
 
 combined_results <- cbind(results, classic_power)
 combined_results
+
 
 
 
